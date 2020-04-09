@@ -14,7 +14,7 @@ yarn add webpack-cli
 1、Webpack 4 配置, 必须配置``mode``属性，可选值有``development, production, none``，先安排上。  
 2、运行一下``yarn dev``，抛错``webpack.optimize.CommonsChunkPlugin has been removed, please use config.optimization.splitChunks instead.``
 
-![CommonsChunkPlugin](../good-good-study/img/Snipaste_2020-04-03_15-45-39.png)
+![CommonsChunkPlugin](https://raw.githubusercontent.com/mjbin/good-good-study/master/img/Snipaste_2020-04-03_15-45-39.png)
 
 是的没错，字面意思，``CommonsChunkPlugin``不要了，用``optimization``配置，具体配置参考文档，我们这里先去掉``CommonsChunkPlugin``，需要补充什么配置先暂停，因为继续``yarn``还是会报错。
 
@@ -63,7 +63,10 @@ splitChunks: {
 所以把``vue``也升级了，``vue``的版本和``vue-template-compiler``一致。
 
 4、继续执行继续报错，因为需要不同的loader对vue文件的各个部分(js, css等)编译，所以下面会报了css的问题
-![css-error](../good-good-study/img/Snipaste_2020-04-03_16-10-30.png)
+
+![css-error](https://raw.githubusercontent.com/mjbin/good-good-study/master/img/Snipaste_2020-04-03_16-10-30.png)
+
+
 此处升级一下``css-loader``和``less-loader``。 然后module.rules 配置一下规则
 ```javascript
 {
