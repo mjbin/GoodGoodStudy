@@ -1,6 +1,6 @@
 ## vue3服务端渲染改造记
 
-vue3正式发布有一段时间了，所以我们这次来看看怎么改造一下vue3的服务端渲染
+vue3正式发布有一段时间了，所以我们这次来看看怎么改造一下vue3的服务端渲染，先上[demo](https://github.com/mjbin/vue3-vite-ssr-demo)
 
 首先我们先建立一个简单的demo项目
 ```javascript
