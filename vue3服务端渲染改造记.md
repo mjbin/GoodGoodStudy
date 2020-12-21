@@ -56,8 +56,7 @@ export default viteSSR(
 
 这样，基本就可以了，过程还是比较简单
 
-build之后会生成dist/client和dist/ssr 两个文件目录，
-一个服务端用，一个客户端用。
+build之后会生成dist/client和dist/ssr 两个文件目录。
 
 试一下启动服务，创建一个server.js，我这里可以通过express来启动一个服务
 ```js
